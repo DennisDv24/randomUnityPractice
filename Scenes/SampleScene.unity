@@ -313,8 +313,8 @@ MonoBehaviour:
   bombPrefab: {fileID: 5094680786494241300, guid: f3ca9022b228f314d82545378a7d8136,
     type: 3}
   playerPos: {fileID: 155528800}
-  instantiateTime: 10
-  spawnRan: 15
+  instantiateTime: 3
+  spawnRan: 20
 --- !u!4 &232778585
 Transform:
   m_ObjectHideFlags: 0

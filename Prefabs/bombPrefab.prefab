@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2954402550496673298}
   - component: {fileID: 7935410499873842417}
   - component: {fileID: 760709952190105189}
+  - component: {fileID: 6289904955230320407}
   m_Layer: 0
   m_Name: bombPrefab
   m_TagString: Untagged
@@ -124,8 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c667d8c7ab57ca4ba483d88125a8ac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToExploit: 100
-  exploitAnimationTime_inSeconds: 1
+  timeToExploit_inSeconds: 1.6
+  exploitAnimationTime_inSeconds: 1.4
 --- !u!95 &7935410499873842417
 Animator:
   serializedVersion: 3
@@ -160,3 +161,17 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &6289904955230320407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5094680786494241300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b9ac761a45b8fa4587d8e6f77d690bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeFactor: 0
+  transitionToShake: bombInflation

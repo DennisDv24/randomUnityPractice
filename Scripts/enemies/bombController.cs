@@ -5,15 +5,17 @@ using UnityEngine;
 public class bombController : MonoBehaviour
 {
 
-
-public int timeToExploit = 100;
-	private int timeToExploitIterator;
+public float timeToExploit_inSeconds;
+	private float timeToExploit;
+		private float timeToExploitIterator;
 
 	private Animator anim;
 
 
 	void Start(){
+		timeToExploit = timeToExploit_inSeconds * 60;
 		timeToExploitIterator = timeToExploit;
+
 		anim = GetComponent<Animator>();
 	}
 			private bool canExploit = false;
@@ -22,7 +24,7 @@ public int timeToExploit = 100;
 		}
 
 	void FixedUpdate(){
-		if(timeToExploitIterator == 0){
+		if(timeToExploitIterator <= 0){
 			exploit();
 		}
 		else{
